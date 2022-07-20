@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TrackerLibrary\TrackerLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CreatePrizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CreatePrizeForm.Designer.cs">
+      <DependentUpon>CreatePrizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CreateTeamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CreateTeamForm.Designer.cs">
+      <DependentUpon>CreateTeamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CreateTournamentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CreateTournamentForm.Designer.cs">
+      <DependentUpon>CreateTournamentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="TorunamentDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TorunamentDashboardForm.Designer.cs">
+      <DependentUpon>TorunamentDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="TournamentViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TournamentViewerForm.Designer.cs">
+      <DependentUpon>TournamentViewerForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="CreatePrizeForm.resx">
+      <DependentUpon>CreatePrizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CreateTeamForm.resx">
+      <DependentUpon>CreateTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CreateTournamentForm.resx">
+      <DependentUpon>CreateTournamentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TorunamentDashboardForm.resx">
+      <DependentUpon>TorunamentDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
